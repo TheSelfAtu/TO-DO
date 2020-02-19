@@ -1,0 +1,99 @@
+{% extends "TopPage/base.html"%}
+{% block content %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'TopPage/TopPage.css' %}">
+
+{% endblock %}
+
+{% block extra_js %}
+<script src="{% static 'TopPage/TopPage.js' %}"></script>
+{% endblock %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 m-0 p-0 ">
+            <div id="image-box">
+                <img id="first_view" src="{% static 'TopPage/img/house.png' %}">
+                <div id="img-box-mini">
+                    <h1 class=" img-box-text " style="color: indianred;" >Make My </h1>
+                    <h1 class="img-box-text"><span class="font-weight-bolder" style="color: chocolate;">Life</span></h1>
+                    <h1 class="img-box-text" style="color:#c73131" > More Fun </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-sm bg-light navbar-light justify-content-center ">
+    <a class="navbar-brand " href="#">TO-DO</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="#">トップ</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">今日の目標</a>
+
+        <li class="nav-item">
+            <a class="nav-link" href="#">ヒント</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container pt-5  ">
+    <div class="row">
+        <div id="today" class="col-sm-8" >
+            <div  class="box fadeIn ">
+                <img class="img-fluid" src="{% static 'TopPage/img/man-center.png' %}">
+            </div>
+            <div class="overlay1" >
+                <div class="text"><a href="">目標をセット</a></div>
+            </div>
+        </div>
+        <div class="col-sm-4 d-flex align-items-center justify-content-center ">
+            <div class="box fadeIn-text ">
+                <h5 class="shadow-sm p-1">今日の目標を決めて</h5>
+                    <h5 class="shadow-sm">楽しく過ごしましょう.</h5>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container py-5 mb-3">
+    <div class="row">
+        <div  class="col-sm-5 d-flex align-items-center justify-content-center ">
+            <div class="box fadeIn-text ">
+                <h3 class="shadow-sm">やる気がでませんか？</h3>
+            
+                <h3 class="shadow-sm"><a href='#' >ヒント</a>を確認しましょう</h3>
+            </div>
+        </div>
+        <div  id="today-tips" class="col-sm-7">
+            <div  class="box fadeIn">
+                <img class="img-fluid " src="{% static 'TopPage/img/man.png' %}">
+            </div>
+            <div class="overlay2">
+                <div class="text"><a href='#'>ヒント</a> </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="parallax"></div>
+
+<div style="height:1000px;background-color:gainsboro;font-size:36px">
+スヌーピーとチャーリーは固い絆で結ばれています。
+でもスヌーピーはチャーリーの名前を覚えずに丸頭の男の子とよんでいます。
+つまり、名前というのは大した問題ではないのですよ。
+</div>
+
+<div class="parallax"></div>
+
+
+<footer style='background-color:black; color: blanchedalmond; height: 30px;'>
+    <p>No copy right</p>
+</footer>
+{% endblock %}
